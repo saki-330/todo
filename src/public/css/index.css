@@ -1,14 +1,14 @@
 .todo__alert--success {
     padding: 10px 30px;
     background-color: #d1e7dd;
-    border: solid 1px #badbcc;
+    border-color: #badbcc;
     color: #0f5132;
 }
 
 .todo__alert--danger {
     padding: 10px 0;
-    background: #f8d7da;
-    border: solid 1px #f5c2c7;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
     color: #842029;
 }
 
