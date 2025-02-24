@@ -23,7 +23,7 @@
     @endif
 </div>
 
-< class="todo__content">
+<div class="todo__content">
     <div class="section__title">
         <h2>新規作成</h2>
     </div>
@@ -55,7 +55,7 @@
             </select>
         </div>
         <div class="search-form__button">
-            <button class="search-form__item">class="search-form__button-submit" type="submit">検索</button>
+            <button class="search-form__item" type="submit">検索</button>
         </div>
     </form>
     <div class="todo-table">
