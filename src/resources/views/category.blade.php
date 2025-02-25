@@ -21,35 +21,42 @@
     </div>
     @endif
 </div>
-<div class="todo-category">
-    <div class="category-create">
-        <form class="category-create__form">
-            <div class="category-create__text">
-                <input class="category-create__text-box" type="text">
-            </div>
-            <div class="category-create__button">
-                <button class="category-create__button-submit">作成</button> 
-            </div> 
-        </form>  
+<div class="category__content">
+    <form class="create-form">
+        <div class="create-form__item">
+            <input class="create-form__item-input" type="text">
+        </div>
+        <div class="create-form__button">
+            <button class="create-form__button-submit" type="submit">作成</button> 
+        </div> 
+    </form>  
+    <div class="category-table">
+        <table class="category-table__inner">
+            <tr class="category-table__row">
+                <th class="category-table__header">category</th>
+            </tr>
+            @foreach ($categories as $category)
+            <tr class="category-table__row">
+                <td class="category-table__item">
+                    <form class="update-form">
+                        <div class="update-form__item">
+                            <input class="update-form__item-input" type="text">
+                        </div>
+                        <div class="update-form__button">
+                            <button class="update-form__button-submit" type="submit">更新</button>
+                        </div>
+                    </form>
+                </td>
+                <td class="category-table__item">
+                    <form class="delete-form">
+                        <div class="delete-form__button">
+                            <button class="delete-form__button-submit" type="submit">削除</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </table>
     </div>
-    <div class="category-list">
-        <table class="category-list__table">
-            <tr class="category-list-header">
-                <th class="category-list-header__title">category</th>
-            </tr>
-            <tr class="category-list-content">
-                <form class="category-update">
-                    <td class="category-list-content-data">category1</td>
-                    <td class="category-update__button">
-                        <button class="category-update__button-submit" type="submit">更新</button>
-                    </td>
-                </form>
-                <form class="category-delete">
-                    <td class="category-delete__button">
-                        <button class="category-delete__button-submit" type="submit">削除</button>
-                    </td>
-                </form>
-            </tr>
-                
 </div>
 @endsection
